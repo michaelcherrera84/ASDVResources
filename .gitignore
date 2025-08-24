@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 
+/public/books/
+/public/Install Relational.dmg
+/public/Install Relational.exe
+/localhost.pem
+/localhost-key.pem

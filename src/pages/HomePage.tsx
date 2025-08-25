@@ -7,6 +7,7 @@ import BooksPage from "./BooksPage.tsx";
 import LinksPage from "./LinksPage.tsx";
 import AppsPage from "./AppsPage.tsx";
 import LandingPage from "./LandingPage.tsx";
+import TutorialsPage from "./TutorialsPage.tsx";
 
 const lgDrawerWidth = 400;
 const mdDrawerWidth = 300;
@@ -53,7 +54,7 @@ export default function HomePage() {
                         },
                     }}
                 >
-                    <NavigationDrawer />
+                    <NavigationDrawer onLinkClick={handleDrawerClose}/>
                 </Drawer>
 
                 {/* Permanent Drawer */}
@@ -85,6 +86,7 @@ export default function HomePage() {
                     <Route path="/books/:filter" element={<BooksPage />} />
                     <Route path="/links" element={<LinksPage />} />
                     <Route path="/apps" element={<AppsPage />} />
+                    <Route path="/tutorials" element={<TutorialsPage />} />
                 </Routes>
             </Box>
         </Box>

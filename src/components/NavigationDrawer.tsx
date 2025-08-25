@@ -4,7 +4,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { courseLinks } from "../data/navigation.ts";
 import { Link as RouterLink } from 'react-router';
 
-export default function NavigationDrawer() {
+export default function NavigationDrawer({onLinkClick}: { onLinkClick?: () => void }) {
     return (
         <div>
             <Toolbar sx={{height: 90}} />
@@ -17,6 +17,7 @@ export default function NavigationDrawer() {
                       underline="none"
                       component={RouterLink}
                       to="/"
+                      onClick={onLinkClick}
                 >
                     Home
                 </Link>
@@ -31,6 +32,7 @@ export default function NavigationDrawer() {
                           sx={{pl: 4}}
                           component={RouterLink}
                           to="/books"
+                          onClick={onLinkClick}
                     >
                         Books
                     </Link>
@@ -51,6 +53,7 @@ export default function NavigationDrawer() {
                                   to={`/books/${encodeURIComponent(semester)}`}
                                   color="inherit"
                                   underline="none"
+                                  onClick={onLinkClick}
                             >
                                 {semester}
                             </Link>
@@ -63,6 +66,7 @@ export default function NavigationDrawer() {
                                       underline="hover"
                                       component={RouterLink}
                                       to={`/books/${encodeURIComponent(course)}`}
+                                      onClick={onLinkClick}
                                 >
                                     {course}
                                 </Link>
@@ -80,6 +84,7 @@ export default function NavigationDrawer() {
                       underline="none"
                       component={RouterLink}
                       to="/links"
+                      onClick={onLinkClick}
                 >
                     Important Links
                 </Link>
@@ -93,8 +98,23 @@ export default function NavigationDrawer() {
                       underline="none"
                       component={RouterLink}
                       to="/apps"
+                      onClick={onLinkClick}
                 >
                     Applications
+                </Link>
+            </Accordion>
+            <Accordion sx={{transition: 'background-color 0.2s ease', '&:hover': {backgroundColor: 'action.hover'}}}
+                       disableGutters square
+            >
+                <Link sx={{cursor: 'pointer', pl: 6, py: 2, display: "block"}}
+                      variant="h6"
+                      color="inherit"
+                      underline="none"
+                      component={RouterLink}
+                      to="/tutorials"
+                      onClick={onLinkClick}
+                >
+                    Tutorials
                 </Link>
             </Accordion>
         </div>

@@ -4,13 +4,18 @@ import RelationalLogo from '../assets/relational.png';
 function AppsPage() {
 
     const handleDownloadClick = (link: string) => {
-        fetch(link).then(res => res.blob().then(blob => {
-            const downloadLink = URL.createObjectURL(blob);
-            const alink = document.createElement("a");
-            alink.href = downloadLink;
-            alink.download = 'Install Relational' + link.substring(link.lastIndexOf('.'));
-            alink.click();
-        }));
+        if (!link) return;
+
+        // Create a download link element
+        const alink = document.createElement("a");
+        alink.href = link;
+
+        // Extract file extension from the URL and set a descriptive filename
+        const extension = link.substring(link.lastIndexOf('.'));
+        alink.download = `Install Relational${extension}`;
+
+        // Trigger the download
+        alink.click();
     };
 
     return (
@@ -33,13 +38,13 @@ function AppsPage() {
                     <Box display="flex" width="100%" justifyContent="center">
                         <Box display="flex" flexDirection={{xs: 'column', sm: 'row'}} gap={{xs: 2, sm: 5}} sx={{mt: 2}}>
                             <Button variant="contained"
-                                    onClick={() => handleDownloadClick('/Install%20Relational.exe')}
+                                    onClick={() => handleDownloadClick('https://storage.googleapis.com/asdv-resources/Install%20Relational.exe')}
                                     sx={{width: 200}}
                             >
                                 Download Windows
                             </Button>
                             <Button variant="contained"
-                                    onClick={() => handleDownloadClick('/Install%20Relational.dmg')}
+                                    onClick={() => handleDownloadClick('https://storage.googleapis.com/asdv-resources/Install%20Relational.dmg')}
                                     sx={{width: 200}}
                             >
                                 Download Mac

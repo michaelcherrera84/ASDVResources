@@ -4,13 +4,10 @@ import type { Book } from '../../data/books';
 export default function BookCard({book}: { book: Book }) {
     const handleDownloadClick = () => {
         if (!book.downloadLink) return;
-        fetch(book.downloadLink).then(res => res.blob().then(blob => {
-            const downloadLink = URL.createObjectURL(blob);
-            const alink = document.createElement("a");
-            alink.href = downloadLink;
-            alink.download = book.title + " - " + book.subtitle + "(" + book.edition + ").pdf";
-            alink.click();
-        }));
+        const alink = document.createElement("a");
+        alink.href = book.downloadLink;
+        alink.download = book.title + " - " + book.subtitle + "(" + book.edition + ").pdf";
+        alink.click();
     };
 
     return (

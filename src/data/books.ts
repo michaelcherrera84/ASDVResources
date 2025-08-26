@@ -46,7 +46,7 @@ export const books: Book[] = [
             ' of basic programming concepts and techniques before moving on to object-oriented programming and' +
             ' advanced Java programming.',
         image: IntroToJavaCover10,
-        downloadLink: '/books/978-0-13-376131-3.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-376131-3.pdf',
         semester: ["1st Semester", "2nd Semester", "3rd Semester"],
         course: ["Programming Fundamentals", "Advanced Programming Language I", "Data Structures and Algorithms"],
     },
@@ -61,7 +61,7 @@ export const books: Book[] = [
             ' of basic programming concepts and techniques before moving on to object-oriented programming and' +
             ' advanced Java programming.',
         image: IntroToJavaCover11,
-        downloadLink: '/books/978-1-292-22187-8.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-292-22187-8.pdf',
         semester: ["1st Semester", "2nd Semester", "3rd Semester"],
         course: ["Programming Fundamentals", "Advanced Programming Language I", "Data Structures and Algorithms"],
     },
@@ -76,7 +76,7 @@ export const books: Book[] = [
             ' of basic programming concepts and techniques before moving on to object-oriented programming and' +
             ' advanced Java programming.',
         image: IntroToJavaCover12,
-        downloadLink: '/books/978-0-13-652023-8.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-652023-8.pdf',
         semester: ["1st Semester", "2nd Semester", "3rd Semester"],
         course: ["Programming Fundamentals", "Advanced Programming Language I", "Data Structures and Algorithms"],
     },
@@ -106,7 +106,7 @@ export const books: Book[] = [
             ' disciplines. Its broad coverage and clear exposition are accessible to students from all backgrounds,' +
             ' encouraging a practical and realistic understanding of the subject.',
         image: ComputerScienceCoverGlobal,
-        downloadLink: '/books/978-1-292-26342-7.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-292-26342-7.pdf',
         semester: ["1st Semester"],
         course: ["Information Technology Infrastructure"],
     },
@@ -149,7 +149,7 @@ export const books: Book[] = [
             ' text provides a balance of hard skills and soft skills and a focus on accessibility and ethics. It' +
             ' covers HTML 5 and CSS along with web design and publishing to the web.',
         image: BasicsOfWebDesign4,
-        downloadLink: '/books/978-0-13-444433-8.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-444433-8.pdf',
         semester: ["2nd Semester"],
         course: ["Web Applications Development I"],
     },
@@ -163,7 +163,7 @@ export const books: Book[] = [
             ' fundamentals of database modeling and design, the languages and models provided by the database' +
             ' management systems, and database system implementation techniques.',
         image: DatabaseSystems,
-        downloadLink: '/books/978-0-13-397077-7.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-397077-7.pdf',
         semester: ["2nd Semester"],
         course: ["SQL Database Programming"],
     },
@@ -178,7 +178,7 @@ export const books: Book[] = [
             ' advantage of relatively new MySQL features such as foreign keys, transactions, stored procedures,' +
             ' stored functions, and triggers.',
         image: MaruchsMySQL2,
-        downloadLink: '/books/978-1-890774-82-0.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-890774-82-0.pdf',
         semester: ["3rd Semester"],
         course: ["Advanced SQL Programming"],
     },
@@ -208,7 +208,7 @@ export const books: Book[] = [
             ' statement–including advanced features that make it easier to create even the most complex statements' +
             ' and programs.',
         image: SQLforMySQL,
-        downloadLink: '/books/9978-0-13-149735-1.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-149735-1.pdf',
         semester: ["3rd Semester"],
         course: ["Advanced SQL Programming"],
     },
@@ -222,7 +222,7 @@ export const books: Book[] = [
             ' Jakarta WebSocket, Jakarta Messaging, Jakarta Enterprise Web Services, Jakarta REST, as well as' +
             ' coverage for securing Jakarta EE applications via Jakarta EE Security.',
         image: JakartaEEAppDev,
-        downloadLink: '/books/978-1-83508-526-4.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-83508-526-4.pdf',
         semester: ["3rd Semester", "4th Semester"],
         course: ["Web Applications Development II", "Web App Development III"],
     },
@@ -237,7 +237,7 @@ export const books: Book[] = [
             ' many useful features but also greatly simplifies the programming model by using annotations and' +
             ' “convention over configuration” for common tasks.',
         image: CoreJSF,
-        downloadLink: '/books/978-0-13-701289-3.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-701289-3.pdf',
         semester: ["3rd Semester"],
         course: ["Web Applications Development II"],
     },
@@ -249,7 +249,7 @@ export const books: Book[] = [
         description: 'Over 100 practical recipes to learn PrimeFaces 5.x – the most popular JSF component library on' +
             ' the planet',
         image: PrimeFaceCookbook,
-        downloadLink: '/books/978-1-78439-342-7.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-78439-342-7.pdf',
         semester: ["3rd Semester"],
         course: ["Web Applications Development II"],
     },
@@ -261,7 +261,7 @@ export const books: Book[] = [
         description: 'This is the Expression Language specification version 3.0, developed the JSR-341 (EL3.0)' +
             ' expert groups under the Java Community Process. See http://www.jcp.org.',
         image: ExpressionLanguageSpec,
-        downloadLink: '/books/EL3.0.PFD.RC1.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/EL3.0.PFD.RC1.pdf',
         semester: ["3rd Semester", "4th Semester"],
         course: ["Web Applications Development II", "Web App Development III"],
     },
@@ -277,7 +277,7 @@ export const books: Book[] = [
             ' when to implement the features and constructs of C++. Every chapter includes clear and easy-to-read' +
             ' code listings, practical real-world examples and an abundance of exercises.',
         image: CPlusPlus8,
-        downloadLink: '/books/978-0-13-376939-5.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0-13-376939-5.pdf',
         semester: ["4th Semester"],
         course: ["C++ Programming"],
     },
@@ -293,7 +293,7 @@ export const books: Book[] = [
             ' when to implement the features and constructs of C++. Every chapter includes clear and easy-to-read' +
             ' code listings, practical real-world examples and an abundance of exercises.',
         image: CPlusPlus9,
-        downloadLink: '/books/978-1-292-22233-2.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-292-22233-2.pdf',
         semester: ["4th Semester"],
         course: ["C++ Programming"],
     },
@@ -325,7 +325,7 @@ export const books: Book[] = [
             ' and APIs. This book focuses on practical techniques for developing apps compatible with Android 4.4' +
             ' (KitKat) through Android 7.0 (Nougat) and beyond.',
         image: AndroidProgramming,
-        downloadLink: '/books/978-0134706092.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-0134706092.pdf',
         semester: ["4th Semester"],
         course: ["Mobile Computing for Android"],
     },
@@ -336,7 +336,7 @@ export const books: Book[] = [
         author: 'Jakarta EE Platform Team, https://jakartaee.github.io/platform/',
         description: 'The Jakarta EE Platform defines a standard platform for hosting Jakarta EE applications.',
         image: JakartaEESpec11,
-        downloadLink: '/books/jakarta-platform-spec-11.0.pdf',
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/jakarta-platform-spec-11.0.pdf',
         semester: ["3rd Semester", "4th Semester"],
         course: ["Web Applications Development II", "Web App Development III"],
     }

@@ -1,0 +1,14 @@
+*.log
+public/books/
+public/Install Relational.dmg
+public/Install Relational.exe
+# Ignore node_modules, as they will be installed in the build stage
+node_modules
+# Ignore the build output, as it will be generated and copied separately
+dist
+# Ignore IDE and OS-specific files
+.env
+.git
+.gitignore
+.DS_Store
+.idea

@@ -8,6 +8,7 @@ import LinksPage from "./LinksPage.tsx";
 import AppsPage from "./AppsPage.tsx";
 import LandingPage from "./LandingPage.tsx";
 import TutorialsPage from "./TutorialsPage.tsx";
+import NumberConverter from "./NumberConverter.tsx";
 
 const lgDrawerWidth = 400;
 const mdDrawerWidth = 300;
@@ -87,6 +88,7 @@ export default function HomePage() {
                     <Route path="/links" element={<LinksPage />} />
                     <Route path="/apps" element={<AppsPage />} />
                     <Route path="/tutorials" element={<TutorialsPage />} />
+                    <Route path="/converter" element={<NumberConverter />} />
                 </Routes>
             </Box>
         </Box>

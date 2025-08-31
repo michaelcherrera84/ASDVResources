@@ -30,3 +30,4 @@ dist-ssr
 /localhost.pem
 /localhost-key.pem
 /.evn
+/notes.md

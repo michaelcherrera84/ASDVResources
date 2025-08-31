@@ -117,6 +117,20 @@ export default function NavigationDrawer({onLinkClick}: { onLinkClick?: () => vo
                     Tutorials
                 </Link>
             </Accordion>
+            <Accordion sx={{transition: 'background-color 0.2s ease', '&:hover': {backgroundColor: 'action.hover'}}}
+                       disableGutters square
+            >
+                <Link sx={{cursor: 'pointer', pl: 6, py: 2, display: "block"}}
+                      variant="h6"
+                      color="inherit"
+                      underline="none"
+                      component={RouterLink}
+                      to="/converter"
+                      onClick={onLinkClick}
+                >
+                    Number Base Converter
+                </Link>
+            </Accordion>
         </div>
     );
 }

@@ -19,7 +19,6 @@ import {
     Chip,
 } from "@mui/material";
 
-// Types for TypeScript
 interface Step {
     dividend: number;
     divisor: number;
@@ -101,7 +100,7 @@ export default function BaseConverter() {
                 <CardContent>
                     <Stack direction={{xs: "column", sm: "row"}} spacing={5} alignItems={"center"}>
                         <TextField
-                            label="Number to convert (base 10)"
+                            label="Number to convert"
                             variant="standard"
                             value={rawInput}
                             onChange={(e) => setRawInput(e.target.value)}

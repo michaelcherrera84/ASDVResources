@@ -20,7 +20,7 @@ function AppsPage() {
 
     return (
         <Box display="flex" flexDirection="column" alignItems="start" m={{xs: 1, md: 5}}>
-            <Box sx={{border: '1px solid', borderColor: 'text.secondary', width: '100%', p: {xs: 2, sm: 5}}}>
+            <Box sx={{border: '1px solid', borderColor: 'text.secondary', width: '100%', p: {xs: 2, sm: 5}, borderRadius: 2}}>
                 <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'start', width: 'fit-content'}}>
                     <Box display="flex"
                          flexDirection={{xs: 'column', sm: 'row'}}

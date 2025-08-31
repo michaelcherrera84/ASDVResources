@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { books } from '../data/books';
+import { books } from '../data/booksIndex';
 import BookList from '../components/books/BookList';
 import { useParams } from 'react-router';
 

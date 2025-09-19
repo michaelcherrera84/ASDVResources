@@ -19,6 +19,7 @@ import CPlusPlus9 from '../assets/book-covers/978-1-292-22233-2.jpg';
 import CPlusPlus10 from '../assets/book-covers/978-0-137-45062-6.jpg';
 import AndroidProgramming from '../assets/book-covers/978-0134706092.jpg';
 import JakartaEESpec11 from '../assets/book-covers/jakarta-platform-spec-11.0.jpg';
+import MasteringJSF2_2 from '../assets/book-covers/978-1-78217-646-6.jpg';
 
 export interface Book {
     id: string;
@@ -339,5 +340,15 @@ export const books: Book[] = [
         downloadLink: 'https://storage.googleapis.com/asdv-resources/books/jakarta-platform-spec-11.0.pdf',
         semester: ["3rd Semester", "4th Semester"],
         course: ["Web Applications Development II", "Web App Development III"],
-    }
+    },
+    {
+        id: '978-1-78217-646-6',
+        title: 'Mastering JavaServer Faces 2.2',
+        author: 'Anghel Leonard',
+        description: 'A homogenous guide integrating the features of JSF 2.x (2.0, 2.1 and 2.2), following a “learning through examples” paradigm with its main focus on the advanced concepts of JSF. If you are a web developer who uses JSF, this is the book for you. Catering to an intermediate-advanced audience, the book assumes you have fundamental knowledge of JSF. It is intended for the developer who wants to improve their skills with the combined power of JSF 2.0, 2.1, and 2.2.',
+        image: MasteringJSF2_2,
+        downloadLink: 'https://storage.googleapis.com/asdv-resources/books/978-1-78217-646-6.pdf',
+        semester: ["3rd Semester", "4th Semester"],
+        course: ["Web Applications Development II", "Web App Development III"],
+    },
 ];

@@ -1,8 +1,16 @@
-import NetBeansBasics from "../components/tutorials/NetBeansBasics.tsx";
+import {Box} from "@mui/material";
+import ImageTutorial from "../components/tutorials/ImageTutorial.tsx";
 
 function TutorialsPage() {
     return (
-        <NetBeansBasics />
+        <Box>
+            <ImageTutorial imageKey="netbeans-basics"
+                           title="NetBeans Basics"
+            />
+            <ImageTutorial imageKey="common-visual-studio-error"
+                           title="Common Visual Studio Error"
+            />
+        </Box>
     );
 }
 

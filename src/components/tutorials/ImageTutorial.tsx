@@ -3,11 +3,20 @@ import { Box, Card, CardMedia, Dialog, Typography, IconButton } from '@mui/mater
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const images = Object.values(
-    import.meta.glob<{ default: string }>('/src/assets/netbeans-basics-tutorial/*.png', {eager: true}),
-).map((module) => module.default);
+const imageSets: Record<string, Record<string, { default: string }>> = {
+    "netbeans-basics": import.meta.glob<{ default: string }>('/src/assets/netbeans-basics-tutorial/*.png', { eager: true }),
+    "common-visual-studio-error": import.meta.glob<{ default: string }>('/src/assets/common-visual-studio-error/*.png', { eager: true }),
+};
 
-export default function NetBeansBasics() {
+type props = {
+    imageKey: keyof typeof imageSets;
+    title: string;
+}
+
+export default function ImageTutorial({imageKey, title}: props) {
+
+    const images = Object.values(imageSets[imageKey]).map((module) => module.default);
+
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     const handlePrev = () => {
@@ -25,7 +34,7 @@ export default function NetBeansBasics() {
     return (
         <Box sx={{p: {xs: 2, sm: 4}, mx: "auto", w: "100%"}}>
             <Typography variant="h4" gutterBottom mt={2}>
-                NetBeans Basics
+                {title}
             </Typography>
             <Card style={{display: 'flex', flexWrap: 'wrap', gap: 10, padding: 15}}>
                 {images.map((img, index) => (
